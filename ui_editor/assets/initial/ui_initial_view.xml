@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <displayList>
+    <image id="n0_ljym" name="bg" src="ljym1" fileName="1_bg_1.jpg" xy="360,640" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n2_ljym" name="n2" src="ljym4" fileName="1_bar_jz_1.png" xy="25,1198" group="n5_ljym"/>
+    <component id="n1_ljym" name="loading_bar" src="ljym8" fileName="ui_progress.xml" xy="34,1202" group="n5_ljym"/>
+    <text id="n3_ljym" name="loading_tips" xy="234,1228" size="142,29" group="n5_ljym" fontSize="20" color="#ffffff" strokeColor="#000000" text="正在加载资源..."/>
+    <text id="n4_ljym" name="loading_value" xy="374,1228" size="70,29" group="n5_ljym" fontSize="20" color="#ffffff" strokeColor="#000000" text="(100%)"/>
+    <group id="n5_ljym" name="loading" xy="25,1198" size="669,59" advanced="true">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </group>
+  </displayList>
+</component>

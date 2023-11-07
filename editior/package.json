@@ -1,0 +1,10 @@
+{
+  "name": "BoomCat",
+  "uuid": "455a567a-a3a6-44dd-a1ad-c6c30ba63dfe",
+  "creator": {
+    "version": "3.7.4"
+  },
+  "dependencies": {
+    "fairygui-cc": "^1.1.1"
+  }
+}

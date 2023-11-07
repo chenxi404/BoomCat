@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="rzr5swb4">
+  <resources>
+    <component id="tj4p0" name="ui_initial_view.xml" path="/" exported="true"/>
+    <image id="ljym1" name="1_bg_1.jpg" path="/"/>
+    <image id="ljym4" name="1_bar_jz_1.png" path="/"/>
+    <image id="ljym5" name="1_bar_jz_2.png" path="/"/>
+    <image id="ljym7" name="1_bar_jz_4.png" path="/"/>
+    <component id="ljym8" name="ui_progress.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>
