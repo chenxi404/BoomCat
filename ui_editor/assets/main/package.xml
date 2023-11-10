@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0to27u3r">
+  <resources>
+    <component id="tea50" name="ui_main_view.xml" path="/" exported="true"/>
+    <image id="tea51" name="7_buff_010.png" path="/"/>
+    <image id="tea52" name="0_btn1_small.png" path="/"/>
+    <component id="tea53" name="start_btn.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

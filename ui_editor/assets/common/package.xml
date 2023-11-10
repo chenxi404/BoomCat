@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0272tsi5">
+  <resources>
+    <image id="tea50" name="0_btn_add.png" path="/" exported="true"/>
+    <image id="tea51" name="0_btn_add2.png" path="/" exported="true"/>
+    <image id="tea52" name="0_btn_add_new.png" path="/" exported="true"/>
+    <image id="tea53" name="0_btn_all.png" path="/" exported="true"/>
+    <image id="tea54" name="0_btn_all_2.png" path="/" exported="true"/>
+    <image id="tea55" name="0_btn_all_3.png" path="/" exported="true"/>
+    <image id="tea56" name="0_btn_bj.png" path="/" exported="true"/>
+    <image id="tea57" name="0_btn_chose.png" path="/" exported="true"/>
+    <image id="tea58" name="0_btn_close.png" path="/" exported="true"/>
+    <image id="tea59" name="0_btn_close1.png" path="/" exported="true"/>
+    <image id="tea5a" name="0_btn_close2.png" path="/" exported="true"/>
+    <image id="tea5b" name="0_btn_close2_new.png" path="/" exported="true"/>
+    <image id="tea5c" name="0_btn_coin_add.png" path="/" exported="true"/>
+    <image id="tea5d" name="0_btn_delate.png" path="/" exported="true"/>
+    <image id="tea5e" name="0_btn_delate2.png" path="/" exported="true"/>
+    <image id="tea5f" name="0_btn_edit.png" path="/" exported="true"/>
+    <image id="tea5g" name="0_btn_explain.png" path="/" exported="true"/>
+    <image id="tea5h" name="0_btn_extend.png" path="/" exported="true"/>
+    <image id="tea5i" name="0_btn_fanhui.png" path="/" exported="true"/>
+    <image id="tea5j" name="0_btn_fy.png" path="/" exported="true"/>
+    <image id="tea5k" name="0_btn_fy2.png" path="/" exported="true"/>
+    <image id="tea5l" name="0_btn_guanbi.png" path="/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

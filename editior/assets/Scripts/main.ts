@@ -7,18 +7,7 @@ const { ccclass, property } = _decorator;
 export class main extends Component {
     start() {
         fgui.GRoot.create();
-        assetManager.loadAny({dir:'config', bundle:'resources'},(err, data) =>{
-            if(err){
-                return;
-            }
-            window.config = {};
-            for (var i = 0; i < data.length; i++) {
-                // 对数据进行操作
-                let jsonAsset = data[i] as JsonAsset;
-                config[jsonAsset.name.substring(7)] = jsonAsset.json;
-            }
-            GameLoop.getInstance().Start();
-        });
+        GameLoop.getInstance().Start();
     }
 
     update(deltaTime: number) {

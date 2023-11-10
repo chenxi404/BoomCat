@@ -4,11 +4,12 @@ import { GameLoopPreload } from './gameloop_preload';
 import { GameLoopStart } from './gameloop_start';
 const { ccclass, property } = _decorator;
 
-enum GameLoopState 
+export enum GameLoopState 
 {
     Preload = 1, 
     Start = 2,
 };
+
 @ccclass('GameLoop')
 export class GameLoop {
     static instance:GameLoop;
@@ -44,6 +45,10 @@ export class GameLoop {
 
     Update(elapse_time:number){
         this.state_machine.Update(elapse_time);
+    }
+    
+    ChangeState(id:number, ...args: any[]){
+        this.state_machine.ChangeState(id, args);
     }
 }
 

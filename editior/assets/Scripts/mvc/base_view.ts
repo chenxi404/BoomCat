@@ -7,8 +7,17 @@ enum UIViewStaus{
 	Open = 3,
 }
 
+export enum UIOrder{
+    Common = 0,
+    Main = 100,
+    MainUp = 200,
+    PopUp = 400,
+    Top = 600,
+}
 export class BaseView {
     status:number;
+    order:number;
+    open_params:any[];
     ui_package:string;
     layout_name:string;
     pkg:fgui.UIPackage;
@@ -16,13 +25,15 @@ export class BaseView {
     fairt_objs:Map<string, fgui.GObject>;
     constructor(){
         this.status = UIViewStaus.Close;
+        this.order = UIOrder.Common;
     }
 
-    Open(){
+    Open(...args: any[]){
         if(this.IsOpen()){
             this.SetVisible(true);
             return;
         }
+        this.open_params = args;
         if(this.status == UIViewStaus.Close){
             this.StartLoadRes();
         }
@@ -48,6 +59,7 @@ export class BaseView {
         }else{
             this.fairy_root = fgui.UIPackage.createObject(this.pkg.name, this.layout_name).asCom;
             this.fairy_root.makeFullScreen();
+            this.fairy_root.sortingOrder = this.order;
             fgui.GRoot.inst.addChild(this.fairy_root);
 
             this.status = UIViewStaus.Open;
@@ -55,6 +67,27 @@ export class BaseView {
 
             this.fairt_objs = new Map<string, fgui.GObject>();
         }
+
+        this.OpenViewCallback(this.open_params);
+    }
+
+    OpenViewCallback(...args: any[]){
+
+    }
+
+    Close(){
+        this.status = UIViewStaus.Close
+        if(this.fairy_root != null){
+            fgui.GRoot.inst.removeChild(this.fairy_root);
+            this.fairy_root = null;
+        }
+
+        if(this.pkg != null){
+            fgui.UIPackage.removePackage(this.pkg.id);
+            this.pkg = null;
+        }
+
+        this.fairt_objs = null;
     }
 
     GetObj(name:string){

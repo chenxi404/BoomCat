@@ -1,4 +1,5 @@
 import { InitialView } from './view/initial_view';
+import { MainView } from './view/main_view';
 
 export class GameController {
     static instance:GameController;
@@ -12,8 +13,10 @@ export class GameController {
     }
 
     private initial_view:InitialView;
+    private main_view:MainView;
     constructor(){
         this.initial_view = new InitialView();
+        this.main_view = new MainView();
     }
 
     //初始化界面
@@ -27,6 +30,20 @@ export class GameController {
 
     SetInitialViewLoadPercent(percent:number){
         this.initial_view.SetInitialViewLoadPercent(percent);
+    }
+
+    CloseInitialView(){
+        this.initial_view.Close();
+    }
+
+    //-----------------------------------------------------------
+    //主界面
+    OpenMianView(){
+        this.main_view.Open();
+    }
+
+    IsMainViewOpen():boolean{
+        return this.main_view.IsOpen();
     }
 }
 

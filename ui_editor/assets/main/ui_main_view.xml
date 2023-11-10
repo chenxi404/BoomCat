@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <displayList>
+    <image id="n0_tea5" name="n0" src="tea51" fileName="7_buff_010.png" xy="87,618"/>
+    <image id="n1_tea5" name="n1" src="tea51" fileName="7_buff_010.png" xy="589,618"/>
+    <component id="n2_tea5" name="n2" src="tea53" fileName="start_btn.xml" xy="292,879"/>
+    <text id="n3_tea5" name="n3" xy="313,74" pivot="0.5,0.5" size="94,42" fontSize="30" color="#ff9900" strokeColor="#000000" text="炸弹猫"/>
+  </displayList>
+</component>
