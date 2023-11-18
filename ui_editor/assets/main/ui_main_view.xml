@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="720,1280">
+  <controller name="game_state" pages="0,,1," selected="1"/>
   <displayList>
-    <image id="n0_tea5" name="n0" src="tea51" fileName="7_buff_010.png" xy="87,618"/>
+    <component id="n0_tea5" name="player1" src="d4a65" fileName="player.xml" xy="87,587"/>
     <image id="n1_tea5" name="n1" src="tea51" fileName="7_buff_010.png" xy="589,618"/>
-    <component id="n2_tea5" name="n2" src="tea53" fileName="start_btn.xml" xy="292,879"/>
+    <component id="n2_tea5" name="start_btn" src="tea53" fileName="start_btn.xml" xy="292,879">
+      <gearDisplay controller="game_state" pages="0"/>
+    </component>
     <text id="n3_tea5" name="n3" xy="313,74" pivot="0.5,0.5" size="94,42" fontSize="30" color="#ff9900" strokeColor="#000000" text="炸弹猫"/>
+    <text id="n5_d4a6" name="n5" xy="589,586" pivot="0.5,0.5" size="44,29" fontSize="20" color="#ffffff" strokeColor="#000000" text="对手"/>
+    <graph id="n6_d4a6" name="card_heap" xy="290,630" pivot="0.5,0.5" anchor="true" size="120,160" group="n11_d4a6" type="rect"/>
+    <text id="n7_d4a6" name="n7" xy="267,508" pivot="0.5,0.5" size="44,29" group="n11_d4a6" fontSize="20" color="#ffffff" strokeColor="#000000" text="牌堆"/>
+    <text id="n8_d4a6" name="total_card_num" xy="267,614" pivot="0.5,0.5" size="46,29" group="n11_d4a6" fontSize="20" color="#ffffff" strokeColor="#000000" text="20张"/>
+    <graph id="n9_d4a6" name="n9" xy="375,538" size="140,180" group="n11_d4a6" type="rect" lineSize="5" lineColor="#ffffff00" fillColor="#00ffffff"/>
+    <text id="n10_d4a6" name="n10" xy="407,502" pivot="0.5,0.5" size="64,29" group="n11_d4a6" fontSize="20" color="#ffffff" strokeColor="#000000" text="出牌区"/>
+    <component id="n12_d4a6" name="n12" src="tea53" fileName="start_btn.xml" xy="570,936" group="n11_d4a6" scale="0.8,0.8">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="摸牌"/>
+    </component>
+    <component id="n13_d4a6" name="n13" src="tea53" fileName="start_btn.xml" xy="570,999" group="n11_d4a6" scale="0.8,0.8">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="出牌"/>
+    </component>
+    <graph id="n16_d4a6" name="handcard_rect" xy="39,994" pivot="0,0.5" anchor="true" size="522,200" group="n11_d4a6" type="rect" lineSize="5" lineColor="#ff66ff00" fillColor="#00ffffff">
+      <relation target="" sidePair="width-width,left-left,bottom-bottom"/>
+    </graph>
+    <group id="n11_d4a6" name="playing_panel" xy="39,502" size="667,592" advanced="true">
+      <gearDisplay controller="game_state" pages="1"/>
+    </group>
   </displayList>
 </component>

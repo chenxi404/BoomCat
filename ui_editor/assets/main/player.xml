@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="44,74">
+  <displayList>
+    <image id="n0_tea5" name="n0" src="tea51" fileName="7_buff_010.png" xy="0,30"/>
+    <text id="n4_d4a6" name="name" xy="0,0" pivot="0.5,0.5" size="44,29" fontSize="20" color="#ffffff" strokeColor="#000000" text="自己"/>
+  </displayList>
+</component>

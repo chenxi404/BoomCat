@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,140" pivot="0.5,0.5" anchor="true">
+  <controller name="card_face" pages="0,,1," selected="0"/>
+  <displayList>
+    <graph id="n14_d4a6" name="n14" xy="0,0" size="100,140" group="n16_d4a6" type="rect"/>
+    <text id="n15_d4a6" name="name" xy="28,57" pivot="0.5,0.5" size="44,29" group="n16_d4a6" fontSize="20" color="#ffffff" strokeColor="#000000" text="反弹"/>
+    <group id="n16_d4a6" name="n16" xy="0,0" size="100,140" advanced="true">
+      <gearDisplay controller="card_face" pages="1"/>
+    </group>
+    <graph id="n17_d4a6" name="n17" xy="0,0" size="100,140" group="n18_d4a6" type="rect" fillColor="#ff0000ff"/>
+    <group id="n18_d4a6" name="n18" xy="0,0" size="100,140" advanced="true">
+      <gearDisplay controller="card_face" pages="0"/>
+    </group>
+  </displayList>
+</component>

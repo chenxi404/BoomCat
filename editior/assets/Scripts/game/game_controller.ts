@@ -45,6 +45,12 @@ export class GameController {
     IsMainViewOpen():boolean{
         return this.main_view.IsOpen();
     }
+
+    UpdateMainView(elapse_time:number){
+        if(this.IsMainViewOpen()){
+            this.main_view.Update(elapse_time);
+        }
+    }
 }
 
 

@@ -24,6 +24,9 @@ export class GameLoopPreload implements GameLoopBase {
 
     StateUpdate(elapse_time:number):void {
         if(this.state == 0){
+            window.game = {};
+            game.UIPackageCache = {};
+
             if(GameController.getInstance().IsInitialViewOpen()){
                 // 加载配置文件
                 assetManager.loadAny({dir:'config', bundle:'resources'},(err, data) =>{

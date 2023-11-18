@@ -8,7 +8,10 @@ export class GameLoopStart implements GameLoopBase {
 
    StateUpdate(elapse_time: number): void {
       if(GameController.getInstance().IsMainViewOpen()){
-         GameController.getInstance().CloseInitialView();
+         if(GameController.getInstance().IsInitialViewOpen()){
+            GameController.getInstance().CloseInitialView();
+         }
+         GameController.getInstance().UpdateMainView(elapse_time);  
       }
    }
 
